@@ -134,6 +134,7 @@ northwind-sql-project/
 
 ````
 
+
 ---
 
 ## 🚀 How to Use This Project  
@@ -142,8 +143,10 @@ northwind-sql-project/
 
 2. 📊 **Review Results** – Check the [`/results/`](./results) folder for screenshots and exported outputs of the SQL queries.  
 
-3. 🗂 **Explore ERD** – View the database schema inside [`/docs/ERD.png`](./docs/ERD.png) to understand the table relationships.  
+3. 🗂 **Explore ERD** – View the database schema inside [`/docs/ERD.png.png`](./docs/ERD.png.png) to understand the table relationships.  
 
+
+---
 
 ---
 
@@ -161,12 +164,19 @@ Overall, this analysis shows the power of SQL in supporting **data-driven decisi
 
 ---
 
-## ✍️ Author
+## ✍️ Author  
 
-**Uye Ismail** — Data Analyst | Data Enthusiast
+**Ismail Uye** – Data Analyst / Data Enthusiast  
+
+> *"Data is a precious thing and will last longer than the systems themselves."* – **Tim Berners-Lee**  
+
+---
+## 🤝 Connect with Me  
 
 * 🔗 [LinkedIn](https://linkedin.com/in/uye-ismail-d)
+* 📧 [Email](uyeismaildanzismuye@gmail.com) 
 * 💻 [GitHub](https://github.com/ismailuyedataworks)
+
 
 
 
