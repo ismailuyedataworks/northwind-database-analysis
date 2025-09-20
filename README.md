@@ -1,4 +1,10 @@
-# 📊 Northwind Traders — SQL Data Analysis  
+# 📊 Northwind Traders Database — SQL Data Analysis  
+
+![GitHub last commit](https://img.shields.io/github/last-commit/ismailuyedataworks/northwind-database-analysis)  
+![GitHub repo size](https://img.shields.io/github/repo-size/ismailuyedataworks/northwind-database-analysis)  
+![GitHub stars](https://img.shields.io/github/stars/ismailuyedataworks/northwind-database-analysis?style=social)  
+
+---
 
 ## 📝 Project Overview  
 The **Northwind Traders** database is a classic dataset that simulates the operations of a global gourmet food supplier.  
@@ -132,32 +138,12 @@ northwind-sql-project/
 
 ## 🚀 How to Use This Project  
 
-1. **📂 Clone the Repository**  
-   ```bash
-   git clone https://github.com/ismailuyedataworks/northwind-sql-project.git
-   cd northwind-sql-project
-````
+1. 🖥 **Run SQL Scripts** – Navigate to the [`/sql_queries/`](./sql_queries) folder and execute the queries in your SQL environment (e.g., PostgreSQL, pgAdmin).  
 
-2. **🗄️ Restore the Database**
-   Make sure **PostgreSQL** is installed and running. Restore the database from the provided backup file:
+2. 📊 **Review Results** – Check the [`/results/`](./results) folder for screenshots and exported outputs of the SQL queries.  
 
-   ```bash
-   pg_restore -U postgres -d postgres -C -v data/northwind.tar
-   ```
+3. 🗂 **Explore ERD** – View the database schema inside [`/docs/ERD.png`](./docs/ERD.png) to understand the table relationships.  
 
-   * Replace `postgres` with your PostgreSQL username if different.
-   * This will create a new database called **northwind**.
-
-3. **💻 Run the Queries**
-
-   * Open the `/queries/` folder.
-   * Execute the `.sql` scripts (e.g., `customers.sql`, `products.sql`, `sales_trends.sql`) inside your SQL client (**pgAdmin**, **DBeaver**, or `psql`).
-
-4. **📊 Explore the Results**
-
-   * Review query outputs in your SQL client.
-   * Check the `/results/` folder for any exported KPIs, CSVs, or visuals.
-   * Compare findings with the **Key Insights** documented in this project.
 
 ---
 
@@ -181,5 +167,6 @@ Overall, this analysis shows the power of SQL in supporting **data-driven decisi
 
 * 🔗 [LinkedIn](https://linkedin.com/in/uye-ismail-d)
 * 💻 [GitHub](https://github.com/ismailuyedataworks)
+
 
 
