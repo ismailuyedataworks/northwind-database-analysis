@@ -81,7 +81,7 @@ WHERE shippeddate IS NOT NULL;
 
 The ERD below shows the main tables and relationships within the **Northwind Traders** database:
 
-![Northwind ERD](docsERD.png)
+![Northwind ERD](docsERD.png.png)
 
 ---
 
@@ -181,4 +181,5 @@ Overall, this analysis shows the power of SQL in supporting **data-driven decisi
 
 * 🔗 [LinkedIn](https://linkedin.com/in/uye-ismail-d)
 * 💻 [GitHub](https://github.com/ismailuyedataworks)
+
 
