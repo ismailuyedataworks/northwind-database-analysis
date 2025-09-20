@@ -1,0 +1,17 @@
+ Employee with most orders
+/*
+ * This query find the  employee who has handled the most orders via grouping
+ * the orders table by employeeid and count the number of orders. 
+ * this result with the employees table on employeeid to get the employee's first and last name.
+ */
+SELECT 
+	CONCAT(e.lastname, ' ', e.firstname) AS Employee,  
+	COUNT(o.orderid)  AS Total_order 
+FROM 
+	employees e 
+INNER JOIN 
+	orders o ON e.employeeid = o.employeeid
+GROUP BY 
+	e.lastname, e.firstname 
+ORDER BY 
+	Total_order DESC

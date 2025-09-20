@@ -1,0 +1,17 @@
+Most frequently used Shipper
+/*
+ * This query find the most frequently used shipper, group the orders table by
+ * the shipvia column (which is a foreign key to the shippers table) and count the
+ * number of orders. The shippers table is joined on shipperid to get the shipper's
+ * company name and order the results in descending order of the order count.
+ */
+SELECT
+ 	s.shipperid, s.companyname, COUNT(o.orderid) AS Number_of_Shipments
+FROM
+ 	shippers s
+INNER JOIN
+ 	orders o ON o.shipvia = s.shipperid
+GROUP BY
+ 	s.shipperid, s.companyname
+ORDER BY
+ 	Number_of_Shipments DESC

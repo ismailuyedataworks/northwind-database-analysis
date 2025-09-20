@@ -1,0 +1,12 @@
+Average Shipping Time
+/*
+ * This query calculates the average shipping time, using the shippeddate 
+ * and orderdate columns. Subtract the orderdate from the shippeddate and 
+ * use the EXTRACT function to get the difference in days with average calculated
+*/
+SELECT
+    ROUND(AVG((shippeddate - orderdate))::numeric, 2) AS average_shipping_time_days
+FROM
+    orders
+WHERE
+    shippeddate IS NOT NULL;

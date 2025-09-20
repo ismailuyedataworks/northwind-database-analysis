@@ -1,0 +1,16 @@
+Low Stock Products and their Suppliers
+/*
+ * This query identify products low on stock, by filtering the products table where
+ * the unitsinstock is less than or equal to the reorderlevel.
+ * To find the supplier, the products table is joined with the suppliers table on supplierid.
+ */
+SELECT
+    p.productname, p.unitsinstock, p.reorderlevel, s.companyname AS supplier_name
+FROM
+    products p
+JOIN
+    suppliers s ON p.supplierid = s.supplierid
+WHERE
+    p.unitsinstock <= p.reorderlevel
+ORDER BY
+    p.unitsinstock ASC;

@@ -1,0 +1,18 @@
+Most Popular Products
+
+/*
+ * This query finds the most popular products by summing the total
+ * quantity sold for each product.
+ */
+
+SELECT 
+	p.productname, 
+	SUM(od.quantity) AS Total_quantity_sold 
+FROM 
+	products p
+INNER JOIN 
+	order_details od ON p.productid = od.productid
+GROUP BY 
+	p.productid, productname
+ORDER BY 
+	Total_quantity_sold DESC

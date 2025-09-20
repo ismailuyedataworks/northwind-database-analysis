@@ -1,0 +1,17 @@
+Total sales per product category
+/*
+ * This query find the sales by category by joining categories, products, order_details, and orders tables.
+ */
+SELECT 
+	c.categoryname, p.productname, 
+	ROUND(SUM(o.unitprice * o.quantity *(1-o.discount))::numeric, 1) AS Total_sales
+FROM 
+	categories c
+JOIN 
+	products p ON c.categoryid = p.categoryid
+JOIN
+	order_details o ON p.productid = o.productid
+GROUP BY 
+	c.categoryname, p.productname
+ORDER BY 
+	Total_sales DESC
